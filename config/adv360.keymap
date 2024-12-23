@@ -33,23 +33,23 @@
     combos {
         compatible = "zmk,combos";
 
-        VOL_UP_WIN+PGUP {
+        VOL_UP_WIN_PGUP {
             bindings = <&kp C_VOL_UP>;
             key-positions = <53 37>;
         };
 
-        VOL_DN_WIN+PGDN {
+        VOL_DN_WIN_PGDN {
             bindings = <&kp C_VOL_DN>;
             key-positions = <37 68>;
         };
 
-        VOL_UP_FN+PGUP {
+        VOL_UP_FN_PGUP {
             bindings = <&kp C_VOLUME_UP>;
             key-positions = <60 53>;
             layers = <2>;
         };
 
-        VOL_DN_FN+PGDN {
+        VOL_DN_FN_PGDN {
             bindings = <&kp C_VOLUME_DOWN>;
             key-positions = <60 68>;
             layers = <2>;
