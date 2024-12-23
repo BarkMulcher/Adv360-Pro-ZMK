@@ -33,12 +33,12 @@
     combos {
         compatible = "zmk,combos";
 
-        VOL_UP {
+        VOL_UP_WIN+PGUP {
             bindings = <&kp C_VOL_UP>;
             key-positions = <53 37>;
         };
 
-        VOL_DN {
+        VOL_DN_WIN+PGDN {
             bindings = <&kp C_VOL_DN>;
             key-positions = <37 68>;
         };
@@ -46,11 +46,13 @@
         VOL_UP_FN+PGUP {
             bindings = <&kp C_VOLUME_UP>;
             key-positions = <60 53>;
+            layers = <2>;
         };
 
         VOL_DN_FN+PGDN {
             bindings = <&kp C_VOLUME_DOWN>;
             key-positions = <60 68>;
+            layers = <2>;
         };
     };
 
@@ -82,11 +84,11 @@
 
         fn {
             bindings = <
-&kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6  &tog 1                                             &mo 3   &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
-&trans  &trans  &trans  &trans  &trans  &trans  &none                                              &none   &trans  &trans  &trans  &trans   &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &none   &trans  &trans      &trans         &trans  &none   &trans  &trans  &trans  &trans   &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &kp PAGE_UP                    &trans  &trans  &trans  &trans   &trans   &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &kp PAGE_DOWN  &trans  &trans          &trans  &trans  &trans   &trans   &trans
+&kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6  &tog 1                                         &mo 3   &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
+&trans  &trans  &trans  &trans  &trans  &trans  &none                                          &none   &trans  &trans  &trans  &trans   &trans   &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &none   &trans  &trans      &trans     &trans  &none   &trans  &trans  &trans  &trans   &trans   &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &kp PG_UP                  &trans  &trans  &trans  &trans   &trans   &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &kp PG_DN  &trans  &trans          &trans  &trans  &trans   &trans   &trans
             >;
         };
 
