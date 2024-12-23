@@ -52,6 +52,11 @@
             bindings = <&kp C_VOLUME_DOWN>;
             key-positions = <60 68>;
         };
+
+        test_A {
+            bindings = <&kp A>;
+            key-positions = <60 75>;
+        };
     };
 
     macros {
