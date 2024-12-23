@@ -34,13 +34,23 @@
         compatible = "zmk,combos";
 
         VOL_UP {
-            bindings = <&kp C_VOLUME_UP>;
-            key-positions = <37 53>;
+            bindings = <&kp C_VOL_UP>;
+            key-positions = <53 37>;
         };
 
         VOL_DN {
             bindings = <&kp C_VOL_DN>;
             key-positions = <37 68>;
+        };
+
+        VOL_UP_ALT {
+            bindings = <&kp C_VOLUME_UP>;
+            key-positions = <60 53>;
+        };
+
+        VOL_DN_ALT {
+            bindings = <&kp C_VOLUME_DOWN>;
+            key-positions = <60 68>;
         };
     };
 
